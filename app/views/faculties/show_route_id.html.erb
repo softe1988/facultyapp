@@ -1,0 +1,9 @@
+<!-- logic to test the generated if and print out name. if id doesn't exist print outs message  -->
+The id is  <%= @id %>
+<br>
+<% if @exists == true %>
+	  <p>The faculty's name is <%= @faculty.name %>. </p>
+	
+	<%else%>
+		<p> The faculty id doesn't exist</p>
+<% end %>		  	

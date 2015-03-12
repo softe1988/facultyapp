@@ -1,0 +1,9 @@
+<h2>Choose a Color</h2>
+<div>
+	<%= form_tag("/faculties/set_color", method: "get") do %>
+		<%= label_tag(:color, "Color") %>
+		<%= text_field_tag(:color) %>
+		<%= submit_tag("Color It") %>
+	<% end %>	
+
+</div>

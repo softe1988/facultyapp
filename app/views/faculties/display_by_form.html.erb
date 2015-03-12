@@ -1,0 +1,14 @@
+<% if @exists ==false %>
+	<p>That faculty member doesn't exist</p>
+
+<% else %>
+
+<p>
+	The faculty member you requested is <br>
+	<%=@faculty.name %> <br>
+	<%=@faculty.email %> <br>
+</p>
+
+<%end%>
+
+<p> <%=link_to 'Find by Form Again', '/faculties/find_by_form' %></p>

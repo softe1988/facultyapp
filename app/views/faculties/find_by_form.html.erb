@@ -1,0 +1,9 @@
+<!-- created page we can search by id to display name and email -->
+
+<%= form_tag("/faculties/display_by_form", method: "post") do%>
+<!-- line above uses the blank display-by form and posts the resulting information that we found by searching for id -->
+	<%= label_tag(:input, "Faculty ID") %>
+	<%=text_field_tag(:input) %>
+	<%= submit_tag("Find!") %>
+
+<% end %>

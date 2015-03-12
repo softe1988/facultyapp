@@ -1,0 +1,11 @@
+The color you chose is <span style="color:<%= @color%>"> <%= @color %></span>
+
+<br>
+
+<%= link_to 'Choose Again', '/faculties/choose_color' %>
+<br>
+<br>
+<br>
+<%= link_to 'New Faculty', new_faculty_path %> |
+<%= link_to 'Search Faculty', faculties_find_by_form_path %> |
+<%= link_to 'Set Faculty Color', faculties_set_color_path %> 
